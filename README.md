@@ -15,6 +15,10 @@ This is a solution to the [Multi-step form challenge on Frontend Mentor](https:/
 - [Read more of starting with Vite](#getting-started-with-vite)
   - [Available Scripts](#available-scripts)
   - [Deployment](#deployment)
+- [Install Reactstrap](#Reactstrap)
+- [Getting started with Redux](#Redux)
+- [Add web-vitals](#add-web-vitals)
+- [Add react-router-dom](#add-react-router-dom)
 
 ## Overview
 My challenge was to build out Sunnyside agency landing page and get it looking as close to the design as possible. Designs could be found inside the `/design` folder and Style Guide in file style-guide.md.
@@ -120,6 +124,9 @@ export default defineConfig({
 [Install Reactstrap](https://reactstrap.github.io/?path=/docs/home-installation--page)
 
 - npm install reactstrap
+- include Bootstrap for Reactstrap with link in HTML head
+
+  `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />`
 
 # Redux
 [Getting started with Redux](https://redux.js.org/introduction/getting-started)
@@ -127,9 +134,12 @@ export default defineConfig({
 npm install react-redux
 npm install @reduxjs/toolkit
 
+# Add web-vitals
+[Install web-vitals](https://www.npmjs.com/package/web-vitals)
 
-https://www.npmjs.com/package/web-vitals
 npm i web-vitals
 
-https://www.npmjs.com/package/react-router-dom
+# Add react-router-dom
+[Install react-router-dom](https://www.npmjs.com/package/react-router-dom)
+
 npm i react-router-dom
