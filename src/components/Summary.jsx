@@ -1,5 +1,5 @@
 import React from 'react';
-import '/style/App.css';
+import './../style/App.css';
 import thankYou from '../assets/images/icon-thank-you.svg'
 import { Container } from 'reactstrap';
 

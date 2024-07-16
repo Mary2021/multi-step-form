@@ -1,39 +1,3 @@
-// import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
-// import './App.css'
-
-// function App() {
-//   const [count, setCount] = useState(0)
-
-//   return (
-//     <>
-//       <div>
-//         <a href="https://vitejs.dev" target="_blank">
-//           <img src={viteLogo} className="logo" alt="Vite logo" />
-//         </a>
-//         <a href="https://react.dev" target="_blank">
-//           <img src={reactLogo} className="logo react" alt="React logo" />
-//         </a>
-//       </div>
-//       <h1>Vite + React</h1>
-//       <div className="card">
-//         <button onClick={() => setCount((count) => count + 1)}>
-//           count is {count}
-//         </button>
-//         <p>
-//           Edit <code>src/App.jsx</code> and save to test HMR
-//         </p>
-//       </div>
-//       <p className="read-the-docs">
-//         Click on the Vite and React logos to learn more
-//       </p>
-//     </>
-//   )
-// }
-
-// export default App
-
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Steps from './components/Steps';
@@ -42,7 +6,7 @@ import Plan from './features/plan/Plan';
 import AddOns from './features/addOns/AddOns';
 import FinishingUp from './components/FinishingUp';
 import Summary from './components/Summary';
-import '/style/App.css';
+import './style/App.css';
 import { Card, Container, Row, Col } from 'reactstrap';
 
 function debounce(fn, ms) {
@@ -81,17 +45,6 @@ export default function App() {
   console.log(dimensions.width)
   console.log(dimensions.height)
 
-  function isMobile() {
-    const regex = /Mobi|Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i;
-    return regex.test(navigator.userAgent);
-  }
-
-  if (isMobile()) {
-    console.log("Mobile device detected");
-  } else {
-    console.log("Desktop device detected");
-  }
-
   return (
     <Router basename="/multi-step-form">
       <Routes>
@@ -111,6 +64,7 @@ export default function App() {
 }
 
 function Info() {
+  //mobile in portrait orientation
   if (window.innerWidth <= 576) {
     return (
       <main>
@@ -122,7 +76,22 @@ function Info() {
         </div>
       </main>
     )
-  } else {
+  } 
+  //tablet in portrait orientation
+  if ((window.innerWidth > 576 && window.innerWidth < 770) && screen.orientation.type == 'portrait-primary') {
+    return (
+      <main>
+        <div className="App">
+          <Steps className='z-index-2' />
+          <Card className='z-index-1'>
+            <PersonalInfo />
+          </Card>
+        </div>
+      </main>
+    )
+  } 
+  //mobile & tablet & desktop in landscape orientation
+  else {
     return (
       <div className="App">
         <main>
@@ -156,7 +125,20 @@ function SelectPlan() {
         </div>
       </main>
     )
-  } else {
+  } 
+  if ((window.innerWidth > 576 && window.innerWidth < 770) && screen.orientation.type == 'portrait-primary'){
+    return (
+      <main>
+        <div className="App">
+          <Steps className='z-index-2' />
+          <Card className='z-index-1'>
+            <Plan />
+          </Card>
+        </div>
+      </main>
+    )
+  } 
+  else {
     return (
       <div className="App">
         <main>
@@ -190,7 +172,20 @@ function PickAddOns() {
         </div>
       </main>
     )
-  } else {
+  } 
+  if ((window.innerWidth > 576 && window.innerWidth < 770) && screen.orientation.type == 'portrait-primary'){
+    return (
+      <main>
+        <div className="App">
+          <Steps className='z-index-2' />
+          <Card className='z-index-1'>
+            <AddOns />
+          </Card>
+        </div>
+      </main>
+    )
+  } 
+  else {
     return (
       <div className="App">
         <main>
@@ -224,7 +219,20 @@ function FinishUp() {
         </div>
       </main>
     )
-  } else {
+  } 
+  if ((window.innerWidth > 576 && window.innerWidth < 770) && screen.orientation.type == 'portrait-primary'){
+    return (
+      <main>
+        <div className="App">
+          <Steps className='z-index-2' />
+          <Card className='z-index-1'>
+            <FinishingUp />
+          </Card>
+        </div>
+      </main>
+    )
+  }
+  else {
     return (
       <div className="App">
         <main>
@@ -258,7 +266,20 @@ function Sum() {
         </div>
       </main>
     )
-  } else {
+  } 
+  if ((window.innerWidth > 576 && window.innerWidth < 770) && screen.orientation.type == 'portrait-primary'){
+    return (
+      <main>
+        <div className="SumApp">
+          <Steps className='z-index-2' />
+          <Card className='z-index-1'>
+            <Summary />
+          </Card>
+        </div>
+      </main>
+    )
+  } 
+  else {
     return (
       <div className="App">
         <main>

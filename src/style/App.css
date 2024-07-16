@@ -133,10 +133,10 @@
   margin-top: 15%;
   text-align: center;
 }
-
-@media screen and (min-width: 20em) and (max-width: 35.5em) {
+/* mobile */
+@media screen and (orientation: portrait) and (min-width: 20em) and (max-width: 35.5em) {
   .App {
-    height: 120vh;
+    height: 100vh;
     background-color: #e3e4e6;
     padding-top: 0%;
     padding-bottom: 100%;
@@ -186,6 +186,10 @@
     padding: 3px 4px;
   }
 
+  .col-sm-9{
+    padding-left: 10%;
+  }
+
   .z-index-2 {
     z-index: 2;
   }
@@ -205,6 +209,10 @@
   .responsiveFont {
     font-size: 100%;
     color: hsl(213, 96%, 18%);
+  }
+
+  form {
+    margin-left: 3% !important;
   }
 
   .form-switch .form-check-input {
@@ -234,8 +242,7 @@
     justify-content: left;
   }
 }
-
-@media screen and (min-width: 36em) and (max-width: 46.5em) {
+@media screen and (orientation: landscape) and (min-width: 20em) and (max-width: 46.5em) {
   .App {
     background-color: #e3e4e6;
     padding-top: 7%;
@@ -247,98 +254,7 @@
   .card-img-overlay {
     text-align: start;
     top: 10%;
-    left: 10%;
-    width: 30%;
-    height: 80%;
-  }
-
-  .pagination {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 15%;
-  }
-
-  .flexCol {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 14%;
-  }
-
-  .pagination>li,
-  .pagination>li>span {
-    border-radius: 50% !important;
-    border: solid;
-    border-color: hsl(0, 0%, 100%);
-    margin: 0 5px;
-    padding: 5px 8px;
-    color:  hsl(0, 0%, 100%);
-    background-color: hsl(243, 100%, 62%);
-  }
-
-  .pagination .disabled span,
-  .pagination .disabled a {
-    color:  hsl(0, 0%, 100%);
-    background-color: transparent;
-    border: none;
-    padding: 3px 4px;
-  }
-
-  .responsiveFont {
-    font-size: 90%;
-    color: hsl(213, 96%, 18%);
-  }
-
-  .form-switch .form-check-input {
-    position: absolute;
-    right: calc(50% - 5%);
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba(255,255,255,1.0)'/%3e%3c/svg%3e");
-    background-color: hsl(213, 96%, 18%);
-  }
-
-  .form-check-input:focus {
-    border-color: none;
-    outline: 0;
-    box-shadow: none;
-  }
-
-  .card-title,
-  .card-text {
-    font-size: 80%;
-  }
-
-  .nextBtnCol {
-    display: flex;
-    position: absolute;
-    right: 2rem;
-    bottom: 10px;
-    align-items: center;
-    justify-content: right;
-    margin-bottom: 0px !important;
-  }
-
-  .backBtnCol {
-    display: flex;
-    position: absolute;
-    left: 13rem;
-    bottom: 0.6rem;
-    align-items: center;
-    justify-content: left;
-  }
-}
-
-@media screen and (min-width: 47em) and (max-width: 61.5em) {
-  .App {
-    background-color: #e3e4e6;
-    padding-top: 7%;
-    padding-bottom: 7%;
-    padding-left: 12%;
-    padding-right: 12%;
-  }
-
-  .card-img-overlay {
-    text-align: start;
-    top: 10%;
-    left: 8%;
+    left: 2%;
     width: 30%;
     height: 80%;
   }
@@ -361,7 +277,133 @@
     border: solid;
     border-color: hsl(0, 0%, 100%);
     margin: 0% 15% 20% 15%;
-    padding: 3px 12px;
+    padding: 1px 16px;
+    color:  hsl(0, 0%, 100%);
+    background-color: hsl(243, 100%, 62%);
+  }
+
+  .pagination .disabled span,
+  .pagination .disabled a {
+    color:  hsl(0, 0%, 100%);
+    background-color: transparent;
+    border: none;
+    padding: 3px 0.2px;
+  }
+
+  .responsiveFont {
+    font-size: 100%;
+    color: hsl(213, 96%, 18%);
+  }
+
+  .form-switch .form-check-input {
+    position: absolute;
+    right: calc(50% - 18%);
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba(255,255,255,1.0)'/%3e%3c/svg%3e");
+    background-color: hsl(213, 96%, 18%);
+  }
+
+  .form-check-input:focus {
+    border-color: none;
+    outline: 0;
+    box-shadow: none;
+  }
+
+  .card-title,
+  .card-text {
+    font-size: 80%;
+  }
+
+  .form-label {
+    margin-bottom: 0% !important;
+  }
+
+  .mb-3 {
+    margin-bottom: 0% !important;
+  }
+
+  .removePadding  {
+    padding-inline: 0% !important;
+  }
+
+  .col-sm-8 {
+    padding-inline: 2%;
+  }
+
+  .planFormGrp {
+    margin-top: 1%;
+  }
+
+  .mt-2 {
+    margin-top: 0% !important;
+  }
+
+  #arcade, #advanced, #pro {
+    margin-bottom: 0% !important;
+  }
+
+  .ps-3 {
+    padding-left: 0.5rem !important;
+  }
+
+  .formText {
+    margin-bottom: 0.5rem !important;
+  }
+
+  .nextBtnCol {
+    display: flex;
+    position: absolute;
+    right: 1.4rem;
+    bottom: 0.6rem;
+    align-items: center;
+    justify-content: right;
+    margin-bottom: 0px !important;
+  }
+
+  .backBtnCol {
+    display: flex;
+    position: absolute;
+    left: 13rem;
+    bottom: 0.6rem;
+    align-items: center;
+    justify-content: left;
+  }
+}
+@media screen and (orientation: landscape) and (min-width: 47em) and (max-width: 59.5em) {
+  .App {
+    background-color: #e3e4e6;
+    padding-top: 7%;
+    padding-bottom: 7%;
+    padding-left: 12%;
+    padding-right: 12%;
+  }
+
+  .card-img-overlay {
+    text-align: start;
+    top: 10%;
+    left: 5%;
+    width: 30%;
+    height: 80%;
+  }
+
+  .pagination {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0%;
+  }
+
+  .flexCol {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 14%;
+  }
+
+  .pagination>li,
+  .pagination>li>span {
+    border-radius: 50% !important;
+    border: solid;
+    border-color: hsl(0, 0%, 100%);
+    margin: 0% 15% 20% 15%;
+    padding: 1px 1px 5px 10px;
     color:  hsl(0, 0%, 100%);
     background-color: hsl(243, 100%, 62%);
   }
@@ -410,15 +452,215 @@
   .backBtnCol {
     display: flex;
     position: absolute;
-    left: 13rem;
+    left: 16rem;
     bottom: 0.6rem;
     align-items: center;
     justify-content: left;
   }
 }
-
-@media screen and (min-width: 62em) and (max-width: 75em) {
+/* tablet*/
+@media screen and (orientation: portrait) and (min-width: 36em) and (max-width: 48em) {
   .App {
+    height: 100vh;
+    background-color: #e3e4e6;
+    padding-top: 7%;
+    padding-bottom: 7%;
+    padding-left: 12%;
+    padding-right: 12%;
+  }
+
+  .card-img-overlay {
+    text-align: center;
+    top: 12%;
+    left: 25%;
+    width: 20%;
+    height: 30%;
+  }
+
+  .pagination {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0%;
+  }
+
+  .flexCol {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 14%;
+  }
+
+  .pagination>li,
+  .pagination>li>span {
+    border-radius: 50% !important;
+    border: solid;
+    border-color: hsl(0, 0%, 100%);
+    margin: 0% 15% 20% 15%;
+    padding: 3px 12px;
+    color:  hsl(0, 0%, 100%);
+    background-color: hsl(243, 100%, 62%);
+  }
+
+  .pagination .disabled span,
+  .pagination .disabled a {
+    color:  hsl(0, 0%, 100%);
+    background-color: transparent;
+    border: none;
+    padding: 3px 4px;
+  }
+
+  .responsiveFont {
+    font-size: 100%;
+    color: hsl(213, 96%, 18%);
+  }
+
+  .form-switch .form-check-input {
+    position: absolute;
+    right: calc(50% - 4%);
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba(255,255,255,1.0)'/%3e%3c/svg%3e");
+    background-color: hsl(213, 96%, 18%);
+  }
+
+  .form-check-input:focus {
+    border-color: none;
+    outline: 0;
+    box-shadow: none;
+  }
+
+  .card {
+    height: 60%;
+    padding: 1.5em;
+  }
+
+  .mb-5 {
+    margin-bottom: 5% !important;
+  }
+
+  .col-md-3 {
+    width: 50% !important;
+  }
+
+  .card-title,
+  .card-text {
+    font-size: 80%;
+  }
+
+  .planFormGrp {
+    padding-inline: 0%  !important;
+    margin-bottom: 5% !important;
+  }
+
+  .col-8 {
+    width: 50%;
+  }
+
+  .nextBtnCol {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-top: 0% !important;
+  }
+
+  .backBtnCol {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+  }
+}
+@media screen and (orientation: landscape) and (min-width: 60em) and (max-width: 64.5em) {
+  .App {
+    height: 100vh;
+    background-color: #e3e4e6;
+    padding-top: 7%;
+    padding-bottom: 7%;
+    padding-left: 12%;
+    padding-right: 12%;
+  }
+
+  .card-img-overlay {
+    text-align: start;
+    top: 10%;
+    left: 7%;
+    width: 30%;
+    height: 80%;
+  }
+
+  .pagination {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0%;
+  }
+
+  .flexCol {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 14%;
+  }
+
+  .pagination>li,
+  .pagination>li>span {
+    border-radius: 50% !important;
+    border: solid;
+    border-color: hsl(0, 0%, 100%);
+    margin: 0% 18% 20% 18%;
+    padding: 1px 1px 5px 10px;
+    color:  hsl(0, 0%, 100%);
+    background-color: hsl(243, 100%, 62%);
+  }
+
+  .pagination .disabled span,
+  .pagination .disabled a {
+    color:  hsl(0, 0%, 100%);
+    background-color: transparent;
+    border: none;
+    padding: 3px 4px;
+  }
+
+  .responsiveFont {
+    font-size: 100%;
+    color: hsl(213, 96%, 18%);
+  }
+
+  .form-switch .form-check-input {
+    position: absolute;
+    right: calc(50% - 18%);
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba(255,255,255,1.0)'/%3e%3c/svg%3e");
+    background-color: hsl(213, 96%, 18%);
+  }
+
+  .form-check-input:focus {
+    border-color: none;
+    outline: 0;
+    box-shadow: none;
+  }
+
+  .card-title,
+  .card-text {
+    font-size: 80%;
+  }
+
+  .nextBtnCol {
+    display: flex;
+    position: absolute;
+    right: 4vw;
+    bottom: 0.6rem;
+    align-items: center;
+    justify-content: right;
+    margin-bottom: 0px !important;
+  }
+
+  .backBtnCol {
+    display: flex;
+    position: absolute;
+    left: 28vw;
+    bottom: 0.6rem;
+    align-items: center;
+    justify-content: left;
+  }
+}
+/* desktop*/
+@media screen and (min-width: 65em) and (max-width: 75em) {
+  .App {
+    height: 100vh;
     background-color: #e3e4e6;
     padding-top: 7%;
     padding-bottom: 7%;
@@ -496,20 +738,46 @@
   .backBtnCol {
     display: flex;
     position: absolute;
-    left: 19rem;
+    left: 20rem;
     bottom: 1rem;
     align-items: center;
     justify-content: left;
   }
 }
-
 @media screen and (min-width: 75em) and (max-width: 81.5em) {
-  .App {
+  .App { 
+    height: 100vh;   
     background-color: #e3e4e6;
     padding-top: 7%;
     padding-bottom: 7%;
     padding-left: 12%;
     padding-right: 12%;
+  }
+
+  .container {
+    width: 85%;
+  }
+
+  .planTitleContainer {
+    margin-left: 0%;
+  }
+
+  .row {
+    margin-top: -5%;
+  }
+
+  .px-xl-5 {
+    padding-left: 0% !important;
+    padding-right: 4% !important;
+  }
+
+  .mx-xl-5 {
+    margin-left: 0% !important;
+    margin-right: 0% !important;
+  }
+
+  .mb-xl-4 {
+    margin-bottom: 2% !important;
   }
 
   .card-img-overlay {
@@ -530,6 +798,22 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 8%;
+  }
+
+  .form {
+    padding-top: 0% !important;
+  }
+
+  .formText {
+    margin-top: 1em;
+  }
+
+  .planFormGrp {
+    padding-top: 3%;
+  }
+
+  button .row {
+    margin-top: 0%;
   }
 
   .pagination>li,
@@ -569,10 +853,22 @@
     box-shadow: none;
   }
 
+  .finishingupTitleContainer {
+    margin-left: 0% !important;
+  }
+
+  .planToggle {
+    margin-left: 0% !important;
+  }
+
+  .totalContainer {
+    margin-left: 0% !important;
+  }
+
   .nextBtnCol {
     display: flex;
     position: absolute;
-    right: 8rem;
+    right: 3rem;
     bottom: 2rem;
     align-items: center;
     justify-content: right;
@@ -582,20 +878,33 @@
   .backBtnCol {
     display: flex;
     position: absolute;
-    left: 27rem;
+    left: 18rem;
     bottom: 2rem;
     align-items: center;
     justify-content: left;
   }
 }
-
 @media screen and (min-width: 82em) and (max-width: 93.5em) {
   .App {
+    height: 100vh;
     background-color: #e3e4e6;
     padding-top: 7%;
     padding-bottom: 7%;
     padding-left: 12%;
     padding-right: 12%;
+  }
+
+  .container {
+    width: 95%;
+  }
+
+  .row {
+    margin-top: -5%;
+  }
+
+  .mx-xl-5 {
+    margin-left: 0% !important;
+    margin-right: 0% !important;
   }
 
   .card-img-overlay {
@@ -647,6 +956,14 @@
     font-size: 130%;
   }
 
+  .planFormGrp {
+    padding-top: 3%;
+  }
+
+  button .row {
+    margin-top: 0%;
+  }
+
   .form-switch .form-check-input {
     position: absolute;
     right: calc(50% - 18%);
@@ -660,10 +977,14 @@
     box-shadow: none;
   }
 
+  .formText {
+    margin-top: 2em;
+  }
+
   .nextBtnCol {
     display: flex;
     position: absolute;
-    right: 8rem;
+    right: 5rem;
     bottom: 2rem;
     align-items: center;
     justify-content: right;
@@ -673,15 +994,15 @@
   .backBtnCol {
     display: flex;
     position: absolute;
-    left: 30rem;
+    left: 26em;
     bottom: 2rem;
     align-items: center;
     justify-content: left;
   }
 }
-
 @media screen and (min-width: 94em) and (max-width: 99.5em) {
   .App {
+    height: 100vh;
     background-color: #e3e4e6;
     padding-top: 7%;
     padding-bottom: 7%;
@@ -770,9 +1091,9 @@
     justify-content: left;
   }
 }
-
 @media screen and (min-width: 100em) and (max-width: 112.5em) {
   .App {
+    height: 100vh;
     background-color: #e3e4e6;
     padding-top: 7%;
     padding-bottom: 7%;
@@ -861,9 +1182,9 @@
     justify-content: left;
   }
 }
-
 @media screen and (min-width: 113em) and (max-width: 160em) {
   .App {
+    height: 100vh;
     background-color: #e3e4e6;
     padding-top: 7%;
     padding-bottom: 7%;
@@ -936,7 +1257,7 @@
   .nextBtnCol {
     display: flex;
     position: absolute;
-    right: 8rem;
+    right: 4rem;
     bottom: 2rem;
     align-items: center;
     justify-content: right;

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '/style/App.css';
+import './../../style/App.css';
 import { Button, Col, Form, FormGroup, Input, Row } from 'reactstrap';
 import { useDispatch, useSelector } from "react-redux";
 import { setSelected, setBox1, setBox2, setBox3 } from './addOnsSlice';
@@ -139,7 +139,7 @@ export default function AddOns() {
     }
 
     return (
-        <Form className='pt-xl-5 pb-xl-0 px-xl-5 mx-xl-5 pt-lg-3 pb-lg-0 px-lg-4 mx-lg-3 pt-md-3 pb-md-0 px-md-3 mx-md-0 h-100'>
+        <Form className='pt-xl-2 pb-xl-0 px-xl-5 mx-xl-5 pt-lg-3 pb-lg-0 px-lg-4 mx-lg-3 pt-md-3 pb-md-0 px-md-3 mx-md-0 h-100'>
             <h2 className='formTitle'>Pick add-ons</h2>
             <p className='formText mb-lg-3 mb-md-1'>Add-ons help to enhance your gaming experience.</p>
             <FormGroup className='mb-5'>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import '/style/App.css';
+import './../../style/App.css';
 import { Button, Form, FormFeedback, FormGroup, Input, Label } from 'reactstrap';
 import { useDispatch, useSelector } from "react-redux";
 import { setName, setEmail, setPhone, setValidateName, setValidateEmail, setValidatePhone } from './personalInfoSlice';
@@ -61,7 +61,7 @@ export default function Info() {
 }
 
   return (
-    <Form className='pt-xl-5 pb-xl-0 px-xl-5 mx-xl-5 pt-lg-3 pb-lg-0 px-lg-4 mx-lg-3 pt-md-3 pb-md-0 px-md-3 mx-md-0 h-100'>
+    <Form className='pt-xl-5 pb-xl-0 px-xl-4 mx-xl-4 pt-lg-3 pb-lg-0 px-lg-4 mx-lg-3 pt-md-3 pb-md-0 px-md-3 mx-md-0 h-100'>
       <h2 className='formTitle'>Personal info</h2>
       <p className='formText'>Please provide your name, email address, and phone number.</p>
       <FormGroup className='mb-xl-3 mb-lg-2 mb-md-1'>

@@ -1,6 +1,6 @@
 import { React } from 'react';
 import { Link } from 'react-router-dom';
-import '/style/App.css';
+import './../style/App.css';
 import { Button, Col, Container, Form, FormGroup, Row } from 'reactstrap';
 import { useSelector } from "react-redux";
 
@@ -62,7 +62,7 @@ export default function FinishingUp() {
 
     return (
         <Form className='pt-xl-5 pb-xl-0 px-xl-5 mx-xl-5 pt-lg-5 pb-lg-0 px-lg-4 mx-lg-3 pt-md-3 pb-md-0 px-md-3 mx-md-0 h-100'>
-            <Container className='px-0'>
+            <Container className='px-0 finishingupTitleContainer'>
                 <h2 className='formTitle'>Finishing up</h2>
                 <p className='formText'>Double-check everything looks OK before confirming.</p>
             </Container>
@@ -80,7 +80,7 @@ export default function FinishingUp() {
                 </Container>
             </FormGroup>
             <FormGroup className='mb-5'>
-                <Container className='justify-content-center'>
+                <Container className='justify-content-center totalContainer'>
                     <Row className='justify-content-center px-3 pt-2'>
                         <Col className='col-8 col-md-9 ps-0 pe-md-5 pe-0'>
                             <p className='formText'>Total ({createTotalText()})</p>

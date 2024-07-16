@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '/style/App.css';
+import './../../style/App.css';
 import iconArcade from '../../assets/images/icon-arcade.svg'
 import iconAdvanced from '../../assets/images/icon-advanced.svg'
 import iconPro from '../../assets/images/icon-pro.svg'
@@ -243,7 +243,7 @@ export default function Plan() {
                             </Container>
                         </Button>
                     </Col>
-                    <Col className='col-md-4 ps-xl-2 pe-xl-2 ps-lg-1 pe-lg-1 ps-md-1 pe-md-1'>
+                    <Col className='col-md-4 ps-xl-2 pe-xl-2 ps-lg-1 pe-lg-1 ps-md-1 pe-md-1 removePadding'>
                         <Button
                             id='advanced'
                             active={advanced}
@@ -346,7 +346,7 @@ export default function Plan() {
 
     return (
         <Form className='pt-xl-5 pb-xl-0 px-xl-5 mx-xl-5 pt-lg-5 pb-lg-0 px-lg-4 mx-lg-3 pt-md-3 pb-md-0 px-md-3 mx-md-0 h-100'>
-            <Container className='px-0'>
+            <Container className='px-0 planTitleContainer'>
                 <h2 className='formTitle'>Select your plan</h2>
                 <p className='formText'>You have the option of monthly or yearly billing.</p>
             </Container>
