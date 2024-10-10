@@ -21,7 +21,7 @@ This is a solution to the [Multi-step form challenge on Frontend Mentor](https:/
 - [Add react-router-dom](#add-react-router-dom)
 
 ## Overview
-My challenge was to build out Sunnyside agency landing page and get it looking as close to the design as possible. Designs could be found inside the `/design` folder and Style Guide in file style-guide.md.
+My challenge was to build out multi-step form and get it looking as close to the design as possible. Designs could be found inside the `/design` folder and Style Guide in file style-guide.md.
 
 ### The challenge
 
