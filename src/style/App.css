@@ -1182,7 +1182,7 @@
     justify-content: left;
   }
 }
-@media screen and (min-width: 113em) and (max-width: 165em) {
+@media screen and (min-width: 113em) and (max-width: 210em) {
   .App {
     height: 100vh;
     background-color: #e3e4e6;
